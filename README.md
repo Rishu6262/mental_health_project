@@ -1,28 +1,58 @@
 # 🧠 Mental Health Prediction System
-# 🌐 Live Demo
 
-🚀 **Try the Application Here**
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-green)
+![NLP](https://img.shields.io/badge/NLP-Text%20Classification-orange)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-https://mentalhealthproject-vggmug4wh94z3zqj8mgyyp.streamlit.app/
 ---
 
-# 🚀 Project Overview
+# 🌐 Live Application
 
-The Mental Health Prediction System is a Natural Language Processing (NLP) and Machine Learning project developed to classify mental health conditions based on textual user inputs.
+🚀 Live Demo:
 
-The system analyzes text written by individuals and predicts the likely mental health category associated with the content. By learning patterns from real-world mental health discussions, the model can identify emotional and psychological indicators present in the text.
+https://mentalhealthproject-vggmug4wh94z3zqj8mgyyp.streamlit.app/
 
-This project demonstrates the complete NLP workflow including text preprocessing, feature extraction, model training, evaluation, and prediction.
+---
+
+# 📌 Project Description
+
+The Mental Health Prediction System is a Natural Language Processing (NLP) and Machine Learning based application that predicts mental health conditions from user-written text.
+
+The system analyzes textual statements, emotions, and language patterns expressed by users and classifies them into predefined mental health categories.
+
+By applying NLP preprocessing techniques and machine learning classification algorithms, the system learns patterns from mental health-related text data and predicts the most likely mental health status associated with a given input.
+
+This project demonstrates how machine learning can be used to analyze human language and support mental health research through automated text classification.
 
 ---
 
 # 🎯 Problem Statement
 
-Mental health challenges such as anxiety, depression, stress, and other emotional conditions are increasingly discussed through online platforms and social communities.
+Mental health conditions such as depression, anxiety, stress, and emotional disorders are often reflected through written communication.
 
-Manually analyzing large amounts of text data is difficult and time-consuming.
+Large amounts of mental health-related content are generated daily on social media platforms, forums, blogs, and support communities.
 
-The objective of this project is to build an intelligent text classification system capable of identifying mental health categories from user-written text using Natural Language Processing and Machine Learning techniques.
+Manually analyzing such data is time-consuming and difficult.
+
+The objective of this project is to develop an automated text classification system that can identify mental health categories based on textual input using NLP and Machine Learning techniques.
+
+---
+
+# 🎯 Project Objectives
+
+The main goals of this project are:
+
+* Analyze mental health related text
+* Apply Natural Language Processing techniques
+* Perform text preprocessing and feature extraction
+* Train machine learning classification models
+* Predict mental health categories
+* Understand patterns in mental health discussions
+* Build an end-to-end NLP application
+* Deploy the model using Streamlit
 
 ---
 
@@ -32,94 +62,42 @@ Dataset Name: Mental Health Text Dataset
 
 Total Records: 992
 
-Total Features: 2
+Features:
 
-### Features
+### Input Feature
 
-| Feature | Description                               |
-| ------- | ----------------------------------------- |
-| text    | User-generated mental health related text |
-| status  | Mental health category (Target Variable)  |
+* Text
 
----
+### Target Feature
 
-# 🎯 Project Objectives
+* Status
 
-* Analyze mental health related text
-* Classify mental health conditions
-* Apply NLP techniques
-* Build text classification models
-* Extract meaningful insights from textual data
-* Improve understanding of sentiment and psychological patterns
+The dataset contains mental health-related textual statements and their corresponding mental health labels.
 
 ---
 
-# ⚙️ How The System Works
+# 🧠 How the System Works
 
-```text
-User Text Input
-        │
-        ▼
- Text Cleaning
-        │
-        ▼
- NLP Preprocessing
-        │
-        ▼
- Feature Extraction
-        │
-        ▼
- Trained ML Model
-        │
-        ▼
- Mental Health Prediction
-        │
-        ▼
- Final Result
-```
+### Step 1: User Input
 
----
+The user enters a sentence, paragraph, or statement.
 
-# 📝 Input Example
+Example:
 
-```text
-I feel stressed all the time and I cannot focus on anything. I feel tired and emotionally exhausted.
-```
-
----
-
-# 🎯 Output Example
-
-```text
-Predicted Status: Anxiety
-```
-
-or
-
-```text
-Predicted Status: Depression
-```
-
-depending on the learned patterns.
-
----
-
-# 🔍 NLP Pipeline
-
-### Step 1: Text Collection
-
-Load mental health text data using Pandas.
+"I feel stressed every day and struggle to focus on my work."
 
 ---
 
 ### Step 2: Text Preprocessing
 
-Text cleaning operations:
+The input text is cleaned and prepared.
 
-* Lowercasing
-* Removing punctuation
-* Removing special characters
-* Removing extra spaces
+Operations include:
+
+* Convert text to lowercase
+* Remove punctuation
+* Remove special characters
+* Remove unnecessary spaces
 * Tokenization
 * Stopword removal
 
@@ -127,41 +105,52 @@ Text cleaning operations:
 
 ### Step 3: Feature Extraction
 
-Convert text into numerical vectors using:
+The cleaned text is converted into numerical vectors using NLP techniques.
+
+Methods:
 
 * Count Vectorizer
 * TF-IDF Vectorizer
 
----
-
-### Step 4: Model Training
-
-Train machine learning algorithms on processed text.
-
-Possible algorithms:
-
-* Naive Bayes
-* Logistic Regression
-* Random Forest
-* Support Vector Machine (SVM)
+This allows machine learning algorithms to understand textual data.
 
 ---
 
-### Step 5: Model Evaluation
+### Step 4: Prediction
 
-Evaluate performance using:
-
-* Accuracy Score
-* Precision
-* Recall
-* F1 Score
-* Confusion Matrix
+The trained machine learning model analyzes the extracted features and predicts the most appropriate mental health category.
 
 ---
 
-### Step 6: Prediction
+### Step 5: Result Display
 
-The trained model predicts the most likely mental health category based on user input text.
+The predicted mental health status is displayed to the user through the Streamlit interface.
+
+---
+
+# 🔄 System Workflow
+
+```text
+User Text
+    │
+    ▼
+Text Cleaning
+    │
+    ▼
+Tokenization
+    │
+    ▼
+Feature Extraction (TF-IDF)
+    │
+    ▼
+Machine Learning Model
+    │
+    ▼
+Mental Health Prediction
+    │
+    ▼
+Final Result
+```
 
 ---
 
@@ -185,6 +174,10 @@ The trained model predicts the most likely mental health category based on user 
 
 * Matplotlib
 * Seaborn
+
+## Deployment
+
+* Streamlit
 
 ---
 
@@ -210,102 +203,93 @@ Mental_Health_Prediction/
 
 ✅ Natural Language Processing
 
-✅ Text Preprocessing
+✅ Text Cleaning
 
 ✅ Feature Extraction
 
 ✅ Machine Learning Prediction
 
-✅ Real-Time User Input Prediction
+✅ Real-Time User Input
 
-✅ Data Visualization
+✅ Interactive Streamlit Interface
 
-✅ Interactive Prediction System
-
----
-
-# 📈 Analysis Performed
-
-### Text Distribution Analysis
-
-Analyze the distribution of mental health categories.
+✅ End-to-End NLP Pipeline
 
 ---
 
-### Word Frequency Analysis
+# 📈 Machine Learning Pipeline
 
-Identify commonly used words across categories.
-
----
-
-### Category Comparison
-
-Compare textual patterns among mental health conditions.
-
----
-
-### NLP Feature Analysis
-
-Study important predictive words and phrases.
+1. Dataset Collection
+2. Data Cleaning
+3. Text Preprocessing
+4. Feature Extraction
+5. Model Training
+6. Model Evaluation
+7. Prediction
+8. Deployment
 
 ---
 
 # 🎓 Learning Outcomes
 
-Through this project, the following skills were developed:
+This project helped in understanding:
 
 * Natural Language Processing
-* Text Cleaning
-* Feature Extraction
 * Text Classification
-* Machine Learning
+* Machine Learning Workflow
+* Feature Engineering
+* Data Preprocessing
 * Model Evaluation
-* Data Visualization
-* Python Programming
+* Streamlit Deployment
+* Real-World NLP Applications
 
 ---
 
-# 💡 Applications
+# 💡 Real World Applications
 
-This project can be useful for:
+This project can be applied in:
 
-* Mental Health Analytics
-* Research Studies
+* Mental Health Research
+* Social Media Analysis
+* Healthcare Analytics
+* Emotional Text Analysis
+* Sentiment Monitoring Systems
 * Educational NLP Projects
-* Social Media Text Analysis
-* Sentiment and Emotion Analysis
-* Healthcare Data Science
 
 ---
 
-# 🚀 Future Improvements
+# 🚀 Future Enhancements
+
+Future improvements may include:
 
 * Deep Learning Models (LSTM, GRU)
 * Transformer Models (BERT)
-* Multi-label Classification
-* Mental Health Dashboard
-* Streamlit Web Application
-* Real-Time Chat Analysis
-* Explainable AI Integration
-
----
-
-# 👨‍💻 Author
-
-**Rishu Gurjar**
-
-Python Developer | Machine Learning Enthusiast | NLP Learner
+* Multi-Class Classification Improvements
+* Emotion Detection System
+* Mental Health Chatbot Integration
+* Explainable AI Features
+* Cloud Deployment
 
 ---
 
 # ⚠️ Disclaimer
 
-This project is developed for educational and research purposes only.
+This project is intended for educational and research purposes only.
 
-The predictions generated by the model should not be considered professional psychological or medical advice. For mental health concerns, please consult qualified healthcare professionals.
+The predictions generated by the system should not be considered medical diagnoses or professional mental health advice.
+
+Users experiencing mental health concerns should consult qualified healthcare professionals.
+
+---
+
+# 👨‍💻 Author
+
+Rishu Gurjar
+
+Python Developer | Machine Learning Enthusiast | NLP Learner
 
 ---
 
 # ⭐ Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+If you found this project helpful, please consider giving it a star on GitHub.
