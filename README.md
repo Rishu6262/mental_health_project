@@ -1,12 +1,5 @@
 # 🧠 Mental Health Prediction System
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Machine Learning](https://img.shields.io/badge/Machine-Learning-green)
-![NLP](https://img.shields.io/badge/NLP-Text%20Classification-orange)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-
 ---
 
 # 🌐 Live Application
