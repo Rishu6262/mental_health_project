@@ -1,5 +1,9 @@
 # 🧠 Mental Health Prediction System
+# 🌐 Live Demo
 
+🚀 **Try the Application Here**
+
+https://mentalhealthproject-vggmug4wh94z3zqj8mgyyp.streamlit.app/
 ---
 
 # 🚀 Project Overview
